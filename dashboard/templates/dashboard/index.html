@@ -6,6 +6,7 @@
         
             <div class="main">
                 <h3>AQUI VAI TER UM GRÁFICO DOIDO!!</h3>
+                <div class="grafico"></div>
             </div>
 
             <br><br><br>
@@ -17,4 +18,9 @@
             </div>
         </center>
     </div>
+    <script>
+        require('plotly')(username, api_key)
+        var graphOptions = {filename: "main-bar", fileopt: "overwrite"}
+        plotly.plot( {{ dados|safe }} , graphOptions, (err, msg)  => console.log(msg) )
+    </script>
 </html>
