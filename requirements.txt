@@ -1,4 +1,5 @@
-Django==2.2.9
+-i https://pypi.org/simple/
+django==2.2.10
+djangorestframework==3.11.0
 pytz==2019.2
 sqlparse==0.3.0
-djangorestframework==3.11.0
